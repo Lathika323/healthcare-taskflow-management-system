@@ -1,6 +1,6 @@
 // backend/routes/auth.js
 import express from "express";
-import { admin } from "../config/firebase.js";
+//import { admin } from "../config/firebase.js";
 
 const router = express.Router();
 

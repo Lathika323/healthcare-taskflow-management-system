@@ -1,5 +1,5 @@
 import express from "express";
-import { db } from "../config/firebase.js";
+//import { db } from "../config/firebase.js";
 
 const router = express.Router(); // ✅ Define router before using it
 
@@ -21,7 +21,7 @@ router.post("/", async (req, res) => {
       createdAt: new Date().toISOString(),
     };
 
-    await db.collection("tasks").add(newTask);
+    //await db.collection("tasks").add(newTask);
     res.json({ success: true, message: "Task assigned successfully" });
   } catch (err) {
     console.error("❌ Error adding task:", err);

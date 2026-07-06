@@ -3,7 +3,7 @@ import cors from "cors";
 import taskRoutes from "./routes/taskRoutes.js";
 import authRoutes from "./routes/auth.js";
 import userRoutes from "./routes/userRoutes.js";
-import "./config/firebase.js"; // ✅ initializes Firebase
+//import "./config/firebase.js"; // ✅ initializes Firebase
 
 // ✅ Initialize app *before* using routes
 const app = express();
